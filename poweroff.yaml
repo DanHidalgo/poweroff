@@ -5,7 +5,7 @@
   gather_facts: no
   tasks:
     - name: apagado
-      ansible.builtin.command: /usr/sbin/shutdown -h +2 "prueba de apagado"
+      ansible.builtin.command: /usr/sbin/shutdown -h now
 
     #- name: wait go down
     #  local_action: wait_for host={{ ansible_ssh_host }} port=22 state=stopped
