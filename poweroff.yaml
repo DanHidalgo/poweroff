@@ -2,6 +2,7 @@
 - name: poweroff
   hosts: LinuxVM
   become: yes
+  become_user: scuadmin
   gather_facts: no
   tasks:
     - name: apagado
