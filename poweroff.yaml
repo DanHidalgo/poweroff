@@ -1,6 +1,6 @@
 ---
-- hosts: LinuxVM
-  gather_facts: no
+- name: poweroff
+  hosts: LinuxVM
   become: yes
   tasks:
     - name: apagado
