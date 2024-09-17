@@ -1,9 +1,9 @@
 ---
-- hosts: shutdown
+- hosts: LinuxVM
   gather_facts: no
   become: yes
   tasks:
-    - name: shutdown
+    - name: apagado
       ansible.builtin.command: /usr/sbin/shutdown -h now
 
     - name: wait go down
