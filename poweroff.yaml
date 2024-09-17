@@ -1,7 +1,7 @@
 ---
 - name: poweroff
   hosts: LinuxVM
-  remote_user: scuadmin
+  remote_user: adminscu
   #become_user: scuadmin
   become: yes
   become_method: sudo
