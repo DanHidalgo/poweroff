@@ -3,7 +3,7 @@
   gather_facts: no
   tasks:
     - name: shutdown
-      command: /usr/sbin/shutdown -h now
+      ansible.builtin.command: /usr/sbin/shutdown -h now
       sudo: yes
 
     - name: wait go down
