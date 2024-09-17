@@ -1,8 +1,9 @@
 ---
 - name: poweroff
   hosts: LinuxVM
-  become: yes
   become_user: scuadmin
+  become: yes
+  become_method: sudo
   gather_facts: no
   tasks:
     - name: apagado
