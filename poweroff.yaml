@@ -3,7 +3,7 @@
   gather_facts: no
   tasks:
     - name: shutdown
-      command: /sbin/shutdown -h now
+      command: /usr/sbin/shutdown -h now
       sudo: yes
 
     - name: wait go down
