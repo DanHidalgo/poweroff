@@ -3,11 +3,11 @@
   hosts: LinuxVM
   become: yes
   tasks:
-    #- name: apagado
-    #  ansible.builtin.command: /usr/sbin/shutdown -h now
+    - name: apagado
+      ansible.builtin.command: /usr/sbin/shutdown -h now
 
     #- name: wait go down
     #  local_action: wait_for host={{ ansible_ssh_host }} port=22 state=stopped
-    - name: apagadotest
-      community.general.shutdown:
-        delay: 10
+    #- name: apagadotest
+    #  community.general.shutdown:
+    #    delay: 10
