@@ -2,6 +2,7 @@
 - name: poweroff
   hosts: LinuxVM
   become: yes
+  gather_facts: no
   tasks:
     - name: apagado
       ansible.builtin.command: /usr/sbin/shutdown -h now
